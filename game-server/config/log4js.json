@@ -1,0 +1,114 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/con-log-${opts:serverId}.log",
+      "pattern": "connector",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 5,
+      "category": "con-log"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/rpc-log-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 5,
+      "category": "rpc-log"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/forward-log-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 5,
+      "category": "forward-log"
+    },
+    {
+     "type": "file",
+     "filename": "/data/logs/pomelo-pm2/rpc-debug-${opts:serverId}.log",
+     "maxLogSize": 1048576,
+     "layout": {
+      "type": "basic"
+     },
+     "backups": 5,
+     "category": "rpc-debug"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/crash.log",
+      "maxLogSize": 1048576,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 5,
+      "category":"crash-log"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/admin.log",
+      "maxLogSize": 1048576,
+      "layout": {
+          "type": "basic"
+        }
+      ,"backups": 5,
+      "category":"admin-log"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/pomelo-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {
+          "type": "basic"
+        }
+      ,"backups": 5,
+      "category":"pomelo"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/pomelo-admin.log",
+      "maxLogSize": 1048576,
+      "layout": {
+          "type": "basic"
+        }
+      ,"backups": 5,
+      "category":"pomelo-admin"
+    },
+    {
+      "type": "file",
+      "filename": "/data/logs/pomelo-pm2/pomelo-rpc-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {
+          "type": "basic"
+        }
+      ,"backups": 5,
+      "category":"pomelo-rpc"
+    }
+  ],
+
+  "levels": {
+    "con-log": "INFO",
+    "rpc-log": "INFO",
+    "forward-log": "INFO",
+    "rpc-debug": "INFO",
+    "crash-log": "ERROR",
+    "admin-log": "INFO",
+    "pomelo": "INFO",
+    "pomelo-admin": "INFO",
+    "pomelo-rpc": "INFO"
+  },
+
+  "replaceConsole": true,
+
+  "lineDebug": false
+}
