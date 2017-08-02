@@ -5,7 +5,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/con-log-${opts:serverId}.log",
+      "filename": "/data/logs/con-log-${opts:serverId}.log",
       "pattern": "connector",
       "maxLogSize": 1048576,
       "layout": {
@@ -16,7 +16,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/rpc-log-${opts:serverId}.log",
+      "filename": "/data/logs/rpc-log-${opts:serverId}.log",
       "maxLogSize": 1048576,
       "layout": {
         "type": "basic"
@@ -26,7 +26,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/forward-log-${opts:serverId}.log",
+      "filename": "/data/logs/forward-log-${opts:serverId}.log",
       "maxLogSize": 1048576,
       "layout": {
         "type": "basic"
@@ -36,7 +36,7 @@
     },
     {
      "type": "file",
-     "filename": "/data/logs/pomelo-pm2/rpc-debug-${opts:serverId}.log",
+     "filename": "/data/logs/rpc-debug-${opts:serverId}.log",
      "maxLogSize": 1048576,
      "layout": {
       "type": "basic"
@@ -46,7 +46,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/crash.log",
+      "filename": "/data/logs/crash.log",
       "maxLogSize": 1048576,
       "layout": {
         "type": "basic"
@@ -56,7 +56,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/admin.log",
+      "filename": "/data/logs/admin.log",
       "maxLogSize": 1048576,
       "layout": {
           "type": "basic"
@@ -66,7 +66,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/pomelo-${opts:serverId}.log",
+      "filename": "/data/logs/pomelo-${opts:serverId}.log",
       "maxLogSize": 1048576,
       "layout": {
           "type": "basic"
@@ -76,7 +76,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/pomelo-admin.log",
+      "filename": "/data/logs/pomelo-admin.log",
       "maxLogSize": 1048576,
       "layout": {
           "type": "basic"
@@ -86,7 +86,7 @@
     },
     {
       "type": "file",
-      "filename": "/data/logs/pomelo-pm2/pomelo-rpc-${opts:serverId}.log",
+      "filename": "/data/logs/pomelo-rpc-${opts:serverId}.log",
       "maxLogSize": 1048576,
       "layout": {
           "type": "basic"

@@ -1,15 +1,27 @@
 {
   "apps": [
     {
-      "name": "pomelo-pm2",
+      "name": "game-server",
       "script": "app.js",
       "args": [env='development'],
       "watch": false,
       "merge_logs": true,
-      "error_file": "/data/logs/upgame/server-pomelo-pm2.err.log",
-      "out_file": "/data/logs/upgame/server-pomelo-pm2.out.log",
+      "error_file": "/data/logs/game-server.err.log",
+      "out_file": "/data/logs/game-server.out.log",
       "log_date_format" : "YYYY-MM-DD HH:mm Z",
-      "cwd": "/Users/lixiaodong/Documents/github/pomeloandpm2/game-server",
+      "cwd": "/data/work/game-server",
+      "exec_mode": "fork"
+    },
+    {
+      "name": "web-server",
+      "script": "app.js",
+      "args": [],
+      "watch": false,
+      "merge_logs": true,
+      "error_file": "/data/logs/web-server.err.log",
+      "out_file": "/data/logs/web-server.out.log",
+      "log_date_format" : "YYYY-MM-DD HH:mm Z",
+      "cwd": "/data/work/web-server",
       "exec_mode": "fork"
     }
   ]
