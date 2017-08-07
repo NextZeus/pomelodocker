@@ -17,6 +17,8 @@ COPY . /data/work
 
 EXPOSE 3001 3010
 
+WORKDIR /data/work
+
 CMD "sh" "startServer.sh"
 
 # build 

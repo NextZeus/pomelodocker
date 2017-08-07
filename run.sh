@@ -1,1 +1,1 @@
-docker run -p 49160:3001 -p 49180:3010 nextzeus/pomelodocker 
+docker run -d -p 49160:3001 -p 49180:3010 nextzeus/pomelodocker
