@@ -16,8 +16,7 @@
 
 - [X] PM2
 - [X] Docker
-- [] ZMQ
-
+- [ ] ZMQ
 
 ### Build
 ```
